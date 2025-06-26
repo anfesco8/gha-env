@@ -10,8 +10,8 @@ jobs:
   test:
     env:
       MONGODB_CLUSTER_ADRESS: cluster.gghf
-      MONDODB_USERNAME: maximilian
-      MONGODB_PASSWORD: dddd
+      MONDODB_USERNAME: ${{ secrets.MONDODB_USERNAME }} #maximilian
+      MONGODB_PASSWORD: ${{ secrets.MONGODB_PASSWORD }}#dddd
       PORT: 8080
     runs-on: ubuntu-latest
     steps:
